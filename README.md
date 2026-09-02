@@ -239,8 +239,27 @@ Eksempel:
 Du skal undersøge billedernes:
 
 - dimensioner
+    banner.jpg  = 1929x919 px
+    drmario.jpg = 1200x900 px
+    thumb-1.jpg = 640x360 px
+    thumb-2.jpg = 642x361 px
+    thumb-3.jpg = 1296x730 px
+    thumb-4.jpg = 1920x1080 px
+    thumb-5.jpg = 1440x841 px
+    thumb-6.jpg = 1200x675 px
+
 - filstørrelse
+    banner.jpg  = 1.67MB
+    drmario.jpg = 397.19KB
+    thumb-1.jpg = 227.70KB
+    thumb-2.jpg = 326.93KB
+    thumb-3.jpg = 240.19KB
+    thumb-4.jpg = 305.70KB
+    thumb-5.jpg = 175.36KB
+    thumb-6.jpg = 121.33KB
+
 - visuelle kvalitet
+    Alle billeder er god kvalitet
 
 Konvertér de relevante JPG-billeder til **WebP**. Hvis der også findes andre tunge rasterbilleder i `img`-mappen, skal du vurdere, om de ligeledes bør optimeres.
 
