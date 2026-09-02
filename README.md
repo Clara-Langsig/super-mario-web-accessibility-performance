@@ -194,6 +194,12 @@ Inden du ændrer noget i koden, skal du lave en måling af sitets nuværende per
 
 Du skal som minimum registrere performance-resultatet før optimering.
 
+    Performance-resultat før optimering:
+        index.html      = 75
+        contact.html    = 75
+        games.html      = 75
+        news.html       = 75
+
 ## Forkert
 
 ```text
