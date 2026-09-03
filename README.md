@@ -1118,10 +1118,26 @@ Du skal ikke blot forsøge at få alle markeringer til at forsvinde.
 Undersøg først:
 
 1. Hvad fortæller WAVE?
+    - 5 Contrast Errors på hver side
+    - 1 Alert på hver side
+    - Features varierer efter sidens indhold
+    - Structure varierer efter sidens HTML-struktur
+    - 1 ARIA på hver side
 2. Hvilket HTML- eller CSS-element handler markeringen om?
+    - Det er CSS'en, hvor den røde tekst og baggrund har for lav kontrast
+        - Kombinationen af tekst og baggrund har for lav konrast 
+    - I HTML er der et redudant link i headeren
+        - Der er flere links til index.html på siden
+        - Det er et logo-link, som WAVE vurderer er en alert, men derfor bør det nødvendigvis ikke ændres
 3. Hvorfor er det et problem?
+    - Contrast Erros
+        - Kan være reelle problemer, fordi teksten ikke har tilstrækkelig kontrast, og derved har nogle brugere svært ved at læse indholdet
+    - Alert: Redundant link
+        - Logo-linket er ikke et problem, men for en bruger, der navigerer med skærmlæser eller tastatur, kan flere links til samme destination give unødvendig gentagelse
 4. Kræver det faktisk en ændring?
+    - Ja, kontrasten med farverne skal ændres
 5. Hvordan kan problemet løses uden at ødelægge sidens funktion eller design?
+    - Man kan undersøge de fem kontrastmarkeringer og júster de relevante CSS-farver, så de stadig passer til designet, men har tilstrækkelig kontrast
 
 > WAVE er et analyseværktøj – ikke en automatisk facitliste.
 
