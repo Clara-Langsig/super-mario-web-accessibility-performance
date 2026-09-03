@@ -1200,6 +1200,8 @@ og
 noget der kræver menneskelig vurdering
 ```
 
+- WAVE viser 1 alert. Jeg har undersøgt elementet og vurderet, at det ikke udgør en egentlig accessibility-fejl, da elementet fungerer korrekt og er en bevidst del af sidens design. Derfor har jeg valgt ikke at ændre koden.
+
 ---
 
 ## 10.5 – Test også med tastatur
@@ -1239,6 +1241,8 @@ form input:focus {
 Din opgave er derfor at **teste fokusmarkeringen**, ikke blot at fjerne eller erstatte CSS-reglen mekanisk.
 
 Hvis fokus ikke er tydeligt nok, skal du forbedre CSS'en og teste igen.
+
+- Jeg har testet hjemmesiden med tastatur ved hjælp af Tab, Shift + Tab og Enter. Alle relevante links, formularfelter og knapper kan nås uden brug af mus. Fokus følger en logisk rækkefølge, og fokusmarkeringen er tydelig. Derfor var det ikke nødvendigt at ændre CSS'en.
 
 ---
 
