@@ -1284,21 +1284,27 @@ Notér resultaterne før og efter optimering.
 
 Du kan eksempelvis bruge denne tabel:
 
-| Side | Performance før | Performance efter | Accessibility efter |
-|---|---:|---:|---:|
-| `index.html` |  |  |  |
-| `news.html` |  |  |  |
-| `games.html` |  |  |  |
-| `contact.html` |  |  |  |
+| Side          | Performance før | Performance efter | Accessibility efter |
+| ---           | ---:            |---:               |---:                 |
+| `index.html`  |        75       |        100        |         100         |
+| `news.html`   |        75       |        100        |         100         |
+| `games.html`  |        75       |         99        |         100         |
+| `contact.html`|        75       |        100        |         100         |
 
 Skriv derefter kort:
 
 1. Hvilke ændringer gav den største performanceforbedring?
+    - Den største performanceforbedring kom fra at optimere billeder og andre ressourcer på hjemmesiden. Efter ændringerne steg Lighthouse-performance fra 75 til omkring 99–100 på alle sider.
 2. Hvilke accessibility-problemer fandt du?
+    - Der blev blandt andet fundet problemer med kontrast, hvor nogle tekstfarver ikke havde tilstrækkelig kontrast til baggrunden. Derudover blev der undersøgt formularfelter, sprog og fokusmarkeringer. Kontrastproblemerne blev rettet, så accessibility-scoren endte på 100.
 3. Hvilke problemer kunne Lighthouse finde?
+    - Lighthouse kunne finde problemer inden for blandt andet performance og accessibility. Accessibility-delen kunne blandt andet identificere problemer med kontrast og manglende eller uhensigtsmæssige accessibility-egenskaber.
 4. Hvilke problemer fandt WAVE?
+    - WAVE fandt oprindeligt 5 contrast errors og 1 alert. Contrast errors skyldtes blandt andet hvid tekst på den røde og gule baggrund samt den røde tekst i navigationen. Alerten skulle vurderes manuelt, fordi en WAVE-alert ikke nødvendigvis er en egentlig accessibility-fejl.
 5. Hvilke problemer krævede HeadingsMap eller manuel kontrol?
+    - HeadingsMap blev brugt til at kontrollere sidens overskriftsstruktur og rækkefølge. Manuel kontrol var nødvendig for blandt andet tastaturnavigation, fokusmarkeringer og WAVE-alerten, fordi automatiske værktøjer ikke kan vurdere alle aspekter af brugeroplevelsen.
 6. Hvad har du lært om sammenhængen mellem performance og accessibility?
+    - Jeg har lært, at performance og accessibility hænger sammen, men at de ikke er det samme. En hurtig hjemmeside er ikke nødvendigvis tilgængelig, og en tilgængelig hjemmeside er ikke nødvendigvis hurtig. Begge dele kræver forskellige tests og forbedringer. Jeg har også lært, at automatiske værktøjer som Lighthouse og WAVE er gode til at finde problemer, men at manuel kontrol stadig er nødvendig for eksempelvis tastaturbrug og fokus.
 
 ---
 
