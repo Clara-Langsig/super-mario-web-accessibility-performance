@@ -1158,6 +1158,12 @@ Brug WAVE til at lokalisere det konkrete element, og undersøg derefter HTML-kod
 
 Når du har rettet problemet, skal du køre WAVE igen.
 
+- WAVE blev kørt på alle fire sider: index.html, news.html, games.html og contact.html.
+
+- WAVE viste 0 Errors på alle sider.
+
+- Derfor var der ikke nogen Errors, som krævede ændringer i HTML-koden
+
 ---
 
 ## 10.3 – Undersøg Contrast Errors
